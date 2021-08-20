@@ -1,15 +1,15 @@
 package com.company.baseAnonymous;
 
 @FunctionalInterface
-public interface ReceiptPrinter {
+public interface ReceiptPrinter<X extends Receipt> {
 
-    void print(Receipt receipt);
+    void print(X receipt);
 
-    private Double getDiscount(Receipt receipt) {
+    private Double getDiscount(X receipt) {
         return receipt.getPrice() - receipt.getPrice() * receipt.getDiscount();
     }
 
-    default Double computeTotal(Receipt receipt) {
+    default Double computeTotal(X receipt) {
         Double discountPrice = getDiscount(receipt);
         return discountPrice + discountPrice * receipt.getTax();
     }
