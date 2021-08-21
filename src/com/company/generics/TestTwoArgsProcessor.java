@@ -1,4 +1,4 @@
-package com.company.generic;
+package com.company.generics;
 
 public class TestTwoArgsProcessor {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.company.generic;
+package com.company.generics;
 
 @FunctionalInterface
 public interface TwoArgsProcessor<X> {
