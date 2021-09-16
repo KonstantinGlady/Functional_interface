@@ -1,4 +1,4 @@
-package com.company.predicate;
+package com.company.predicates;
 
 import java.util.function.*;
 
