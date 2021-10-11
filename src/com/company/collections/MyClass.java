@@ -1,4 +1,4 @@
-package com.company.Collections;
+package com.company.collections;
 
 public class MyClass {
     int i1;
